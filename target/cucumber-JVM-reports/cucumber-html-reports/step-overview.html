@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>AnkurNhs</td>
+                          <td>11</td>
+                        <td>21 Oct 2022, 22:43</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.accept_the_analytics_cookies()</td>
+                <td>22</td>
+                <td class="duration" data-value="2894487900">2s 894ms</td>
+                <td class="duration" data-value="131567631">131ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.click_on_start_now()</td>
+                <td>22</td>
+                <td class="duration" data-value="30289950700">30s 289ms</td>
+                <td class="duration" data-value="1376815940">1s 376ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_about_diabetes_as_disease(java.lang.String)</td>
+                <td>10</td>
+                <td class="duration" data-value="12859376600">12s 859ms</td>
+                <td class="duration" data-value="1285937660">1s 285ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_about_diabetes_medication_as_medicine(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="8325929500">8s 325ms</td>
+                <td class="duration" data-value="1665185900">1s 665ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_about_glaucoma()</td>
+                <td>5</td>
+                <td class="duration" data-value="5539871400">5s 539ms</td>
+                <td class="duration" data-value="1107974280">1s 107ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_date_of_birth()</td>
+                <td>21</td>
+                <td class="duration" data-value="30600332700">30s 600ms</td>
+                <td class="duration" data-value="1457158700">1s 457ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_details_about_claim_any_benefit_or_tax_credit_as_yes_and_universal_credit_as_no(java.lang.String,java.lang.String)</td>
+                <td>21</td>
+                <td class="duration" data-value="39529673000">39s 529ms</td>
+                <td class="duration" data-value="1882365380">1s 882ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_details_about_home_care_as_permanent_and_careLocalCouncil(java.lang.String,java.lang.String)</td>
+                <td>15</td>
+                <td class="duration" data-value="27493708200">27s 493ms</td>
+                <td class="duration" data-value="1832913880">1s 832ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_details_about_injury_or_illness_in_armed_forces_as_war(java.lang.String)</td>
+                <td>15</td>
+                <td class="duration" data-value="19225126500">19s 225ms</td>
+                <td class="duration" data-value="1281675100">1s 281ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_details_about_pregnant_or_given_birth_as_field(java.lang.String)</td>
+                <td>15</td>
+                <td class="duration" data-value="18542532100">18s 542ms</td>
+                <td class="duration" data-value="1236168806">1s 236ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_details_about_savings_or_investment()</td>
+                <td>12</td>
+                <td class="duration" data-value="14284936200">14s 284ms</td>
+                <td class="duration" data-value="1190411350">1s 190ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.enter_random_details_about_live_with_partner()</td>
+                <td>21</td>
+                <td class="duration" data-value="29304242600">29s 304ms</td>
+                <td class="duration" data-value="1395440123">1s 395ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.get_a_result_and_check_whether_you_get_any_help_with_nhs_cost_pass_parameter_as_claim_and_credit_and_careLocalCouncil(java.lang.String,java.lang.String,java.lang.String)</td>
+                <td>22</td>
+                <td class="duration" data-value="8186859600">8s 186ms</td>
+                <td class="duration" data-value="372129981">372ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.i_am_living_in_country_as_country(java.lang.String)</td>
+                <td>22</td>
+                <td class="duration" data-value="32122910600">32s 122ms</td>
+                <td class="duration" data-value="1460132300">1s 460ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.i_put_circumstances_as_gp_practice_in_scotland_or_live_in_highland_and_island()</td>
+                <td>21</td>
+                <td class="duration" data-value="27012346600">27s 012ms</td>
+                <td class="duration" data-value="1286302219">1s 286ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.open_the_nhs_cost_checker_tool_url()</td>
+                <td>22</td>
+                <td class="duration" data-value="40669502100">40s 669ms</td>
+                <td class="duration" data-value="1848613731">1s 848ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.CheckerToolStepDef.select_random_country_is_your_dental_practise_in()</td>
+                <td>21</td>
+                <td class="duration" data-value="28846852700">28s 846ms</td>
+                <td class="duration" data-value="1373659652">1s 373ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.TaggedHooks.afterFirst(io.cucumber.java.Scenario)</td>
+                <td>22</td>
+                <td class="duration" data-value="4080754900">4s 080ms</td>
+                <td class="duration" data-value="185488859">185ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinition.TaggedHooks.beforeFirst(io.cucumber.java.Scenario)</td>
+                <td>22</td>
+                <td class="duration" data-value="31786148500">31s 786ms</td>
+                <td class="duration" data-value="1444824931">1s 444ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>19</td>
+              <td>336</td>
+              <td class="duration">6m 51s 595ms</td>
+              <td class="duration">1s 224ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

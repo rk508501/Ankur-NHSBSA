@@ -1,0 +1,6 @@
+stepdefinition\CheckerToolStepDef.class
+pages\BrowserInitial.class
+pages\CircumstancesPage.class
+pages\Utility.class
+stepdefinition\TaggedHooks.class
+runner\TestRunner.class
