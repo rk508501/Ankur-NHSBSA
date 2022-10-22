@@ -9,7 +9,7 @@
 ### 2. Navigate to project folder/dir and open cmd
 ### 3. Run the command : git clone https://github.com/Ankur1Dhingra/Ankur-NHSBSA
 ### 4. Once project is successfully import.
-### 5. Naviagate to project folder/dir and open cmd and Run the command : mvn clean verify
+### 5. Naviagate to project folder/dir where pom.xml is present and open cmd and Run the command : mvn clean verify
 
-### **Make sure maven home is set correctly and mvn command is executed from correct project dir.(where you import your project)
+### **Make sure maven home is set correctly and mvn command is executed from correct project dir having pom.xml.(where you import your project)
 
