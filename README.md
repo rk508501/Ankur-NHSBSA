@@ -1,3 +1,8 @@
+# Pre-requisites :
+### <sub>Java JDK 1.8 or above</sub>
+### <sub>Maven (Any version)</sub>
+### <sub>Set the Maven home path(Check the maven version while executing "mvn -v" in the cmd)</sub>
+
 # NHS Cost Checker Tool- Automation
 ### An Automated Solution that validates user get a result of whether he/she can get help or not with their NHS costs.
 
@@ -10,7 +15,9 @@
 ### 3. Run the command : git clone https://github.com/Ankur1Dhingra/Ankur-NHSBSA
 ### 4. After cloning the project successfully in the local, then navigate to project folder/dir where pom.xml is present and open cmd and Run the command : mvn clean verify
 ### 5. You can see the different reports under the folder : 
-##### a. target -> cucumber-JVM-reports ->cucumber-html-reports -> feature-overview.html
+#####      a. target -> cucumber-JVM-reports ->cucumber-html-reports -> feature-overview.html
+#####      b. target -> cucumber-JVM-reports ->cucumber-html-reports -> file-src-test-resources-Features-cost-feature.html
+#####      b. SparkReports -> sparkreport.html
 
 ### **Make sure maven home is set correctly and mvn command is executed from correct project dir having pom.xml.(where you import your project)
 
